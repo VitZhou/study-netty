@@ -1,4 +1,18 @@
 # Buffer(缓冲区)
+全限定名:java.nio.Buffer
+一个用于特定的原始数据类型的容器
+
+> 缓冲区实际上是一个数组。通常它是一个字节数组(ByteBuffer),也可以使用其他种类的数组。但是一个缓冲区不仅仅是一个数组,缓冲区提供了对数据的结构化访问以及维护读写位置(limit)等信息. ---《netty 权威指南》
+
+除了Boolean之外,java的基础类型都有一个与之对应的缓冲区:
+
+- ByteBuffer: 字节缓冲区
+- CharBuffer: 字符缓冲区
+- ShortBuffer: 短整型缓冲区
+- IntBuffer: 整形缓冲区
+- LongBuffer: 长整型缓冲区
+- FloatBuffer: 浮点型缓冲区
+- DoubleBuffer: 双精度型缓冲区
 
 ## 缓冲区要点
 1. 	缓冲器是特定原始类型的元素的线性有限序列。 除了其内容(content)，缓冲区的基本属性是容量(capacity)，限制(limit)和位置(position)：
